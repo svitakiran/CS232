@@ -1,0 +1,7 @@
+v 4
+file . "alu.vhd" "6f3ea602358e99c97ab6bbb7194f661bb5efa8db" "20241216043737.002":
+  entity alu at 3( 37) + 0 on 13;
+  architecture test of alu at 36( 1184) + 0 on 14;
+file . "alutestbench.vhd" "f34a3de9b0f968b0e58fa4143c29299921474532" "20241216043736.999":
+  entity alutestbench at 1( 0) + 0 on 11;
+  architecture test of alutestbench at 8( 112) + 0 on 12;
