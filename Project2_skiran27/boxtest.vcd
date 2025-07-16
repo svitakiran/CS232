@@ -1,0 +1,85 @@
+$date
+  Mon Sep 23 15:13:22 2024
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module boxtest $end
+$var reg 4 ! a[3:0] $end
+$var reg 4 " aout[3:0] $end
+$scope module c0 $end
+$var reg 4 # a[3:0] $end
+$var reg 4 $ result[3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000 !
+b0001 "
+b0000 #
+b0001 $
+#25000000
+b0001 !
+b0001 #
+#50000000
+b0010 !
+b0010 #
+#75000000
+b0011 !
+b0011 #
+#100000000
+b0100 !
+b0010 "
+b0100 #
+b0010 $
+#125000000
+b0101 !
+b0101 #
+#150000000
+b0110 !
+b0110 #
+#175000000
+b0111 !
+b0111 #
+#200000000
+b1000 !
+b0100 "
+b1000 #
+b0100 $
+#225000000
+b1001 !
+b1001 #
+#250000000
+b1010 !
+b1010 #
+#275000000
+b1011 !
+b1011 #
+#300000000
+b1100 !
+b1000 "
+b1100 #
+b1000 $
+#325000000
+b1101 !
+b1101 #
+#350000000
+b1110 !
+b1110 #
+#375000000
+b1111 !
+b1111 #
+#400000000
+b0000 !
+b0001 "
+b0000 #
+b0001 $

@@ -1,0 +1,23 @@
+-- Quartus II VHDL Template
+-- Unsigned Adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity add2 is
+    Port (
+        A      : in UNSIGNED(3 downto 0);  -- 4-bit input A
+        B      : in UNSIGNED(3 downto 0);  -- 4-bit input B
+        sum    : out UNSIGNED(4 downto 0)   -- 5-bit output sum
+    );
+end add2;
+
+architecture Behavioral of add2 is
+begin
+    process(A, B)
+    begin
+        -- Concatenate '0' to make them 5-bit and perform addition
+        sum <= ('0' & A) + ('0' & B);
+    end process;
+end Behavioral;

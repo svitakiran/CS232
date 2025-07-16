@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity hexdisplay is
+    port(
+        inp : in UNSIGNED(3 downto 0);
+        outp : out UNSIGNED(6 downto 0)
+    );
+end entity hexdisplay;
+
+architecture Behavioral of hexdisplay is
+begin
+    process(inp)
+    begin
+        case inp is
+            when "0000" => outp <= "1111110"; -- 0
+            when "0001" => outp <= "0110000"; -- 1
+            when "0010" => outp <= "1101100"; -- 2
+            when "0011" => outp <= "1111000"; -- 3
+            when "0100" => outp <= "0110010"; -- 4
+            when "0101" => outp <= "1011010"; -- 5
+            when "0110" => outp <= "1011110"; -- 6
+            when "0111" => outp <= "1110000"; -- 7
+            when "1000" => outp <= "1111100"; -- 8
+            when "1001" => outp <= "1111001"; -- 9
+            when "1010" => outp <= "1110110"; -- A
+            when "1011" => outp <= "0011110"; -- b
+            when "1100" => outp <= "1001110"; -- C
+            when "1101" => outp <= "0111010"; -- D
+            when "1110" => outp <= "1001100"; -- E
+            when "1111" => outp <= "1000100"; -- F
+            when others => outp <= "0000000";
+        end case;
+    end process;
+end architecture Behavioral;
