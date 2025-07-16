@@ -1,0 +1,9 @@
+start:
+MOVEI 1 RE 
+MOVEI 0 RD
+ADD RA RE RD
+CALL start
+ADD RA RE RD
+RETURN
+end:
+HALT
