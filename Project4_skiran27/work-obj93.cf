@@ -1,0 +1,10 @@
+v 4
+file . "lightrom.vhd" "23ca051a2bf6a949d8a28f56a05d83e69ef0d647" "20241215204918.309":
+  entity lightrom at 4( 47) + 0 on 15;
+  architecture rtl of lightrom at 18( 254) + 0 on 16;
+file . "lights.vhd" "22627078ba97ad913e8812e9002ac73295680ea2" "20241215204918.306":
+  entity lights at 8( 229) + 0 on 13;
+  architecture rtl of lights at 23( 490) + 0 on 14;
+file . "lightsbench.vhd" "864b1cb9cea2779e1ab8e379f6ba1aad9371032a" "20241215204918.302":
+  entity lightsbench at 8( 106) + 0 on 11;
+  architecture test of lightsbench at 15( 211) + 0 on 12;
